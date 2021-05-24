@@ -62,7 +62,7 @@ ul > li > a > img {
 
 .itachi {
   height: 100%;
-  width: 43%;
+  width: 40%;
 }
 
 .img{
@@ -95,7 +95,7 @@ ul > li > a > img {
 .sharingan {
   width: 150px;
   height: 150px;
-}
+} 
 
 #ParticleCanvas {
   position: absolute;
