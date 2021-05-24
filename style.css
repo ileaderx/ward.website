@@ -99,7 +99,8 @@ ul>li>a>img{
 
 #ParticleCanvas{
 
-  position: absolute;
+  position:absolute;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
