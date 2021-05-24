@@ -5,19 +5,17 @@ body {
   margin: 0;
 }
 
-
-ul>li{
-    display: inline;
+ul > li {
+  display: inline;
 }
 
-ul>li>a>img{
-    width: 35px;
+ul > li > a > img {
+  width: 35px;
 }
 
-#work>li{
-    display: list-item;
+#work > li {
+  display: list-item;
 }
-
 
 .work1,
 .work2 {
@@ -56,17 +54,21 @@ ul>li>a>img{
   color: #ffffff;
 }
 
-.footer{
+.footer {
   font-weight: normal;
   font-size: 18px;
   color: #ffffff;
 }
 
-
 .itachi {
+  height: 100%;
+  width: 43%;
+}
+
+.img{
   height: auto;
-    width: 43%;
-  }
+  width: 100%;
+}
 
 .hire_button {
   width: 150px;
@@ -91,16 +93,12 @@ ul>li>a>img{
 }
 
 .sharingan {
-
   width: 150px;
   height: 150px;
-
 }
 
-
-#ParticleCanvas{
-
-  position:absolute;
+#ParticleCanvas {
+  position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -109,34 +107,33 @@ ul>li>a>img{
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
-  #ParticleCanvas{
+  #ParticleCanvas {
     display: none;
   }
-  .sharingan{
+  .sharingan {
     display: none;
   }
 
   .hire_button {
-  width: 100px;
-  height: 45px;
-  border: 3px solid #a20b0b;
-  box-sizing: border-box;
-  background: none;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 29px;
-  color: #a20b0b;
-  transition: 0.35s;
-  margin: 10px;
-}
+    width: 100px;
+    height: 45px;
+    border: 3px solid #a20b0b;
+    box-sizing: border-box;
+    background: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    color: #a20b0b;
+    transition: 0.35s;
+    margin: 10px;
+  }
 
-.hire_button:hover,
-.hire_button:focus {
-  background-color: #a20b0b;
-  --hover: #a20b0b;
-  box-shadow: inset 0 -3.25em 0 0 var(--hover);
-  border-color: var(--hover);
-  color: #fff;
-}
-
+  .hire_button:hover,
+  .hire_button:focus {
+    background-color: #a20b0b;
+    --hover: #a20b0b;
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+    border-color: var(--hover);
+    color: #fff;
+  }
 }
