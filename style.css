@@ -106,7 +106,9 @@ ul > li > a > img {
   .sharingan {
     display: none;
   }
-
+  .itachi{
+    width:10em;
+  }
   .hire_button {
     width: 100px;
     height: 45px;
