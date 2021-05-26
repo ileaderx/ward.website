@@ -60,7 +60,7 @@ ul > li > a > img {
   color: #ffffff;
 }
 
-.itachi{
+.itachi {
   width: 14em;
 }
 
@@ -86,9 +86,8 @@ ul > li > a > img {
 }
 
 .sharingan {
-  width: 150px;
-  height: 150px;
-} 
+  width: 10em;
+}
 
 #ParticleCanvas {
   position: absolute;
@@ -99,6 +98,7 @@ ul > li > a > img {
   right: 0;
   margin: auto;
 }
+
 @media only screen and (max-width: 600px) {
   #ParticleCanvas {
     display: none;
