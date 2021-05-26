@@ -60,14 +60,8 @@ ul > li > a > img {
   color: #ffffff;
 }
 
-.itachi {
-  height: 100%;
-  width: 40%;
-}
-
-.img{
-  height: auto;
-  width: 100%;
+.itachi{
+  width: 14em;
 }
 
 .hire_button {
@@ -78,7 +72,6 @@ ul > li > a > img {
   background: none;
   font-weight: normal;
   font-size: 20px;
-  line-height: 29px;
   color: #a20b0b;
   transition: 0.35s;
 }
@@ -101,7 +94,7 @@ ul > li > a > img {
   position: absolute;
   z-index: -1;
   top: 0;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin: auto;
