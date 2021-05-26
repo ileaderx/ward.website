@@ -6,7 +6,7 @@
   
   $( window ).resize(function() {
     ParticleCanvas.width = ($(window).width() - 20);
-    ParticleCanvas.height = ($(window).height() -30);
+    ParticleCanvas.height = ($(window).height() -10);
   });
   
   window.onload = function() {
@@ -14,7 +14,7 @@
         var ParticleCanvas = document.getElementById("ParticleCanvas");
         var context = ParticleCanvas.getContext("2d");
         ParticleCanvas.width = ($(window).width() - 20);
-        ParticleCanvas.height = ($(window).height() -30);
+        ParticleCanvas.height = ($(window).height() -10);
         document.body.appendChild(ParticleCanvas);
   
   
@@ -67,7 +67,7 @@
           
           this.red += 2;
           
-          this.alpha -= 0.002;
+          this.alpha -= 0.001;
   
   
           // If Particle is old, it goes in the chamber for renewal
