@@ -61,7 +61,7 @@ ul > li > a > img {
 }
 
 .itachi {
-  width: 14em;
+  width: 14em !important;
 }
 
 .hire_button {
@@ -106,9 +106,7 @@ ul > li > a > img {
   .sharingan {
     display: none;
   }
-  .itachi{
-    width:10em;
-  }
+
   .hire_button {
     width: 100px;
     height: 45px;
