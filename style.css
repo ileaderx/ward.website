@@ -1,8 +1,9 @@
 body {
   background: #000000;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 #nav-link {
@@ -14,12 +15,23 @@ body {
   color: #050505;
 }
 
+label{
+  color: #ffffff;
+}
+
+.form-control{
+  border: #a20b0b 2px solid;
+}
+
 .name {
   font-size: 3em;
   font-weight: 600;
   color: #ffffff;
 }
-
+.my-image{
+  border-radius: 50%;
+  width: 10rem;
+}
 .title {
   font-size: 2em;
   font-weight: 500;
@@ -89,14 +101,24 @@ ul {
   list-style: none;
 }
 
-ul > li > a > i {
+#footer-social {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 15px;
 }
 
-ul > li > a > i:hover {
+#footer-social:hover {
   color: #000000;
+}
+
+.header-social {
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 15px;
+}
+
+.header-social:hover {
+  color: #a20b0b;
 }
 
 .whatsapp {
@@ -117,15 +139,6 @@ ul > li > a > i:hover {
   color: #050505;
 }
 
-.social {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: bolder;
-}
-
-.social:hover {
-  color: #a20b0b;
-}
 
 .footer {
   font-weight: normal;
