@@ -1,58 +1,144 @@
 body {
   background: #000000;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-ul > li {
-  display: inline;
+#nav-link {
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-ul > li > a > img {
-  width: 35px;
+#nav-link:hover {
+  color: #050505;
 }
 
-#work > li {
-  display: list-item;
-}
-
-.work1,
-.work2 {
-  color: #a20b0b;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-}
-
-.work1:hover,
-.work2:hover {
-  color: #e31010;
-  transition: 0.25s;
-}
-
-.name {
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 66px;
+label{
   color: #ffffff;
 }
 
+.form-control{
+  border: #a20b0b 2px solid;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: 600;
+  color: #ffffff;
+}
+.my-image{
+  border-radius: 50%;
+  width: 10rem;
+}
 .title {
+  font-size: 2em;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 48px;
   color: #ffffff;
 }
 
 .description {
   font-weight: normal;
-  font-size: 20px;
-  line-height: 36px;
   color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-weight: normal;
+  color: #ffffff;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #a20b0b;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #ffffff;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(162, 11, 11, 0.7),
+    0 4px 8px rgba(162, 11, 11, 0.7);
+}
+
+.card-title {
+  color: #050505;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #a20b0b;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #a20b0b;
+  border: #a20b0b 1px solid;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b31010;
+  border: #a30c0c 1px solid;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+#footer-social {
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 15px;
+}
+
+#footer-social:hover {
+  color: #000000;
+}
+
+.header-social {
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 15px;
+}
+
+.header-social:hover {
+  color: #a20b0b;
+}
+
+.whatsapp {
+  color: #a20b0b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp:hover {
+  color: #b31010;
+}
+
+.card-icon {
+  color: #a20b0b;
+}
+
+.card-icon:hover {
+  color: #050505;
+}
+
 
 .footer {
   font-weight: normal;
@@ -61,72 +147,42 @@ ul > li > a > img {
 }
 
 .itachi {
-  width: 14em !important;
-}
-
-.hire_button {
-  width: 150px;
-  height: 65px;
-  border: 3px solid #a20b0b;
-  box-sizing: border-box;
-  background: none;
-  font-weight: normal;
-  font-size: 20px;
-  color: #a20b0b;
-  transition: 0.35s;
-}
-
-.hire_button:hover,
-.hire_button:focus {
-  background-color: #a20b0b;
-  --hover: #a20b0b;
-  box-shadow: inset 0 -3.25em 0 0 var(--hover);
-  border-color: var(--hover);
-  color: #fff;
+  width: 10em;
 }
 
 .sharingan {
   width: 10em;
 }
 
-#ParticleCanvas {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  margin: auto;
+.backToTop {
+  width: 60px;
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  border: solid 2px #a20b0b;
+  background: transparent;
+  color: #a20b0b;
+  text-decoration: none;
+  display: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+  padding: 0.6rem;
+  transition: 0.4s;
+}
+.backToTop:hover {
+  color: #ffffff;
+  background-color: #a20b0b;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
   #ParticleCanvas {
     display: none;
   }
-  .sharingan {
+
+  video {
     display: none;
-  }
-
-  .hire_button {
-    width: 100px;
-    height: 45px;
-    border: 3px solid #a20b0b;
-    box-sizing: border-box;
-    background: none;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 29px;
-    color: #a20b0b;
-    transition: 0.35s;
-    margin: 10px;
-  }
-
-  .hire_button:hover,
-  .hire_button:focus {
-    background-color: #a20b0b;
-    --hover: #a20b0b;
-    box-shadow: inset 0 -3.25em 0 0 var(--hover);
-    border-color: var(--hover);
-    color: #fff;
   }
 }
